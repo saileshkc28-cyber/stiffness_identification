@@ -1,0 +1,9 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Run outputs: every run writes here, never committed
+results/
+*.vtk
+*.log
