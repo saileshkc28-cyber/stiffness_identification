@@ -1,0 +1,91 @@
+{
+  "population_family": "normal",
+  "parameters": [
+    "mu_E",
+    "sd_E"
+  ],
+  "posterior": {
+    "mu_E": {
+      "mean": 206288757393.07,
+      "sd": 624334590.4285871,
+      "ci95": [
+        205073386351.77478,
+        207479601185.28735
+      ]
+    },
+    "sd_E": {
+      "mean": 19692816581.927555,
+      "sd": 448644779.1467794,
+      "ci95": [
+        18847779871.8789,
+        20613069665.15313
+      ]
+    }
+  },
+  "implied_E_mean_GPa": 206.28875739306986,
+  "implied_E_sd_GPa": 19.69281658192757,
+  "logcE": 14062.693225921676,
+  "tempering_q": [
+    0.0,
+    0.0037901564693060587,
+    0.017043475233428983,
+    0.08476326610131485,
+    0.5604190860552172,
+    1.0
+  ],
+  "n_levels": 6,
+  "n_likelihood_calls": 16000,
+  "n_forward_solves": 0,
+  "data": {
+    "n_observations": 1000,
+    "n_sensors": 1,
+    "sensors": [
+      "disp_y_tip"
+    ],
+    "sigma_assumed_m": 3.788e-08,
+    "population_family": "normal",
+    "quadrature": {
+      "n_nodes": 512,
+      "t_span": 1.6094201941069861,
+      "min_spacing": 3.781887587694932e-05,
+      "max_spacing": 0.004932866340972397,
+      "mid_spacing": 0.004932866340972397
+    },
+    "table_shape": [
+      1000,
+      512
+    ],
+    "table_MiB": 3.906,
+    "surrogate_identity": {
+      "kind": "gradient_enhanced_gp",
+      "training_hash": "a02d93167625048b",
+      "training_csv": "D:\\KratosProjects\\MCMC\\Analysis\\sensors_surrogate\\N01\\surrogate\\gradient_training_responses.csv",
+      "n_training": 5,
+      "n_sensors": 1,
+      "e_scale_Pa": 206900000000.0,
+      "e_min_Pa": 80000000000.0,
+      "e_max_Pa": 400000000000.0,
+      "gp_jitter": 1e-10,
+      "random_state": null,
+      "sensor_names": [
+        "disp_y_tip"
+      ],
+      "sensor_data_file": "D:\\KratosProjects\\MCMC\\Analysis\\sensors_surrogate\\N01\\sensor_data.json",
+      "kernels": [
+        "Matern52(ell=11.0996) on u and du/dt, s2=929.061"
+      ],
+      "ell_": [
+        11.099566497253093
+      ],
+      "jitter_": [
+        1e-10
+      ],
+      "versions": {
+        "python": "3.13.2",
+        "numpy": "2.4.6",
+        "scipy": "1.17.1",
+        "scikit-learn": "1.9.1"
+      }
+    }
+  }
+}

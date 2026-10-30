@@ -1,0 +1,57 @@
+{
+    "problem_data": {
+        "problem_name": "hierarchical_population_beam_N01",
+        "echo_level": 1
+    },
+    "parameters": [
+        {
+            "name": "mu_E",
+            "prior": {
+                "type": "uniform",
+                "parameters": [
+                    150000000000.0,
+                    260000000000.0
+                ]
+            }
+        },
+        {
+            "name": "sd_E",
+            "prior": {
+                "type": "uniform",
+                "parameters": [
+                    1000000000.0,
+                    50000000000.0
+                ]
+            }
+        }
+    ],
+    "likelihood": {
+        "observations_file": "../../data/phase1_samples_clean.csv",
+        "require_valid_column": true,
+        "surrogate_file": "../output/surrogate/response_surrogate.joblib",
+        "population_family": "normal",
+        "quadrature": {
+            "n_nodes": 512,
+            "e_min_Pa": 80000000000.0,
+            "e_max_Pa": 400000000000.0
+        },
+        "noise_model": {
+            "type": "gaussian_iid",
+            "sigma": 3.788e-08
+        }
+    },
+    "sampler_settings": {
+        "python_module": "smc_acs_sampler",
+        "Parameters": {
+            "n_particles": 1000,
+            "p": 1,
+            "burn": 2,
+            "target_cov": 1.5,
+            "random_seed": 20260802
+        }
+    },
+    "output": {
+        "output_path": "../../output/hierarchical",
+        "write_npz": true
+    }
+}
