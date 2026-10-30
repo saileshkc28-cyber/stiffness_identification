@@ -8,4 +8,4 @@ results/
 *.vtk
 *.log
 
-beam/bayesian_inference/output/
+output/
