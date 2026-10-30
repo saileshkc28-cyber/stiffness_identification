@@ -1,0 +1,16 @@
+{
+  "case_name": "point_3_high",
+  "z_value": 1.7320508075688772,
+  "weight": 0.16666666666666666,
+  "alpha_true": 1.1732050807568877,
+  "E_true": 242736131208.60007,
+  "u_true": [
+    -1.614422139622153e-06
+  ],
+  "u_hat": [
+    -1.614422139622153e-06
+  ],
+  "measurement_generation": "zero_mean_noise",
+  "likelihood_noise_sigma": 3.788097e-08,
+  "random_seed": null
+}

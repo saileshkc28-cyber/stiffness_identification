@@ -1,0 +1,47 @@
+{
+  "gp": {
+    "rmse_m": 1.2140872525736763e-11,
+    "max_abs_error_m": 4.6304778254973916e-11,
+    "mean_signed_error_m": -2.448199650607069e-12,
+    "max_error_over_sigma": 0.0012223757273104126,
+    "rmse_over_sigma": 0.00032050057128254014,
+    "per_sensor_max_over_sigma": [
+      0.0012223757273104126
+    ]
+  },
+  "interp_baseline": {
+    "rmse_m": 1.287969231038054e-11,
+    "max_abs_error_m": 4.67603618941947e-11,
+    "mean_signed_error_m": -3.4983331861672225e-12,
+    "max_error_over_sigma": 0.0012344024425508296,
+    "rmse_over_sigma": 0.00034000429002690644,
+    "per_sensor_max_over_sigma": [
+      0.0012344024425508296
+    ]
+  },
+  "gate_max_error_over_sigma": 0.05,
+  "n_training": 25,
+  "n_validation": 15,
+  "solves_used_this_session": 40,
+  "identity": {
+    "training_hash": "b9f8b08d1c474877",
+    "n_training": 25,
+    "n_sensors": 1,
+    "e_scale_Pa": 206900000000.0,
+    "e_min_Pa": 80000000000.0,
+    "e_max_Pa": 400000000000.0,
+    "gp_jitter": 1e-10,
+    "kernels": [
+      "266**2 * Matern(length_scale=34, nu=2.5)"
+    ],
+    "versions": {
+      "python": "3.13.2",
+      "numpy": "2.4.6",
+      "scipy": "1.17.1",
+      "scikit-learn": "1.9.1"
+    }
+  },
+  "response_model": "kratos",
+  "gp_passes_gate": true,
+  "interp_passes_gate": true
+}

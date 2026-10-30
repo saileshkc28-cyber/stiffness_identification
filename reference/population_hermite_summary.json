@@ -1,0 +1,77 @@
+{
+  "method": "three-point Gauss-Hermite in alpha (parameter) space",
+  "note": "alpha_between_case_sd is the recovered POPULATION sd; alpha_total_mixture_sd additionally contains within-posterior inference uncertainty and must NOT be quoted as the population sd",
+  "support_space": "alpha",
+  "measurement_generation": "zero_mean_noise",
+  "measurement_noise_sigma": 3.788e-08,
+  "cases": [
+    "point_1_low",
+    "point_2_central",
+    "point_3_high"
+  ],
+  "n_sensors": 1,
+  "sensor_names": [
+    "disp_y_tip"
+  ],
+  "weights": [
+    0.16666666666666666,
+    0.6666666666666666,
+    0.16666666666666666
+  ],
+  "z_values": [
+    -1.7320508075688772,
+    0.0,
+    1.7320508075688772
+  ],
+  "alpha_true": [
+    0.8267949192431123,
+    1.0,
+    1.1732050807568877
+  ],
+  "E_true": [
+    171063868791.39993,
+    206900000000.0,
+    242736131208.60007
+  ],
+  "u_true": [
+    [
+      -2.2908319978798716e-06
+    ],
+    [
+      -1.894048256682899e-06
+    ],
+    [
+      -1.614422139622153e-06
+    ]
+  ],
+  "alpha_posterior_means": [
+    0.8268463075650361,
+    1.0013429490037287,
+    1.1758181501776799
+  ],
+  "alpha_posterior_sds": [
+    0.012966122868913065,
+    0.02005579909081356,
+    0.026109063773625835
+  ],
+  "E_ref": 206900000000.0,
+  "phase1_target_alpha_mean": 1.0,
+  "phase1_target_alpha_sd": 0.1,
+  "phase1_target_E_mean": 206900000000.0,
+  "phase1_target_E_sd": 20690000000.0,
+  "resample_counts": [
+    16548,
+    66849,
+    16603
+  ],
+  "combined_sample_count": 100000,
+  "total_forward_solves": 30000,
+  "alpha_recovered_mean": 1.0013393756262718,
+  "alpha_between_case_sd": 0.10073949376275776,
+  "alpha_total_mixture_sd": 0.10275327852314622,
+  "E_recovered_mean": 207177116817.07562,
+  "E_between_case_sd": 20843001259.51457,
+  "E_total_mixture_sd": 21259653326.438942,
+  "relative_error_alpha_mean": 0.0013393756262718437,
+  "relative_error_alpha_between_sd": 0.00739493762757748
+}

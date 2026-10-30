@@ -1,0 +1,16 @@
+{
+  "case_name": "point_2_central",
+  "z_value": 0.0,
+  "weight": 0.6666666666666666,
+  "alpha_true": 1.0,
+  "E_true": 206900000000.0,
+  "u_true": [
+    -1.894048256682899e-06
+  ],
+  "u_hat": [
+    -1.894048256682899e-06
+  ],
+  "measurement_generation": "zero_mean_noise",
+  "likelihood_noise_sigma": 3.788097e-08,
+  "random_seed": null
+}

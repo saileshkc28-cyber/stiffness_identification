@@ -1,0 +1,18 @@
+{
+  "training_hash": "3d3c50e5e395b713",
+  "n_training": 25,
+  "n_sensors": 1,
+  "e_scale_Pa": 206900000000.0,
+  "e_min_Pa": 80000000000.0,
+  "e_max_Pa": 400000000000.0,
+  "gp_jitter": 1e-10,
+  "kernels": [
+    "326**2 * Matern(length_scale=37, nu=2.5)"
+  ],
+  "versions": {
+    "python": "3.13.2",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.9.1"
+  }
+}
