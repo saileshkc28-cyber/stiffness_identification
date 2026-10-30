@@ -1,0 +1,83 @@
+{
+  "population_family": "normal",
+  "parameters": [
+    "mu_E",
+    "sd_E"
+  ],
+  "posterior": {
+    "mu_E": {
+      "mean": 206317446362.03787,
+      "sd": 630848991.5648608,
+      "ci95": [
+        205110834870.06445,
+        207562261191.7862
+      ]
+    },
+    "sd_E": {
+      "mean": 19714553338.81264,
+      "sd": 453016037.1938095,
+      "ci95": [
+        18874882305.09367,
+        20641286260.595707
+      ]
+    }
+  },
+  "implied_E_mean_GPa": 206.3174463620377,
+  "implied_E_sd_GPa": 19.71455333881264,
+  "logcE": 14062.633002601055,
+  "tempering_q": [
+    0.0,
+    0.0037901323587201437,
+    0.01701750887988205,
+    0.08217312745328606,
+    0.49883737652508053,
+    1.0
+  ],
+  "n_levels": 6,
+  "n_likelihood_calls": 16000,
+  "n_forward_solves": 0,
+  "data": {
+    "n_observations": 1000,
+    "n_sensors": 1,
+    "sensors": [
+      "disp_y_tip"
+    ],
+    "sigma_assumed_m": 3.788e-08,
+    "population_family": "normal",
+    "quadrature": {
+      "n_nodes": 512,
+      "t_span": 1.6094201941069861,
+      "min_spacing": 3.781887587694932e-05,
+      "max_spacing": 0.004932866340972397,
+      "mid_spacing": 0.004932866340972397
+    },
+    "table_shape": [
+      1000,
+      512
+    ],
+    "table_MiB": 3.906,
+    "surrogate_identity": {
+      "training_hash": "1cc7b06579601954",
+      "n_training": 25,
+      "n_sensors": 1,
+      "e_scale_Pa": 206900000000.0,
+      "e_min_Pa": 80000000000.0,
+      "e_max_Pa": 400000000000.0,
+      "gp_jitter": 1e-10,
+      "random_state": 20260911,
+      "sensor_names": [
+        "disp_y_tip"
+      ],
+      "sensor_data_file": "D:\\KratosProjects\\MCMC\\Analysis\\sensors_surrogate\\N01\\sensor_data.json",
+      "kernels": [
+        "901**2 * Matern(length_scale=56.9, nu=2.5)"
+      ],
+      "versions": {
+        "python": "3.13.2",
+        "numpy": "2.4.6",
+        "scipy": "1.17.1",
+        "scikit-learn": "1.9.1"
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+    "base_config": "BayesianParameters.json",
+    "domain": {
+        "e_scale_Pa": 206900000000.0,
+        "e_min_Pa": 80000000000.0,
+        "e_max_Pa": 400000000000.0
+    },
+    "design": {
+        "n_training": 25,
+        "n_validation": 15,
+        "design_seed": 20260911
+    },
+    "gp": {
+        "gp_jitter": 1e-10,
+        "n_restarts_optimizer": 8,
+        "random_state": 20260911
+    },
+    "accuracy_gate": {
+        "sigma_noise_m": [
+            3.788e-08
+        ],
+        "max_error_over_sigma": 0.05
+    },
+    "budget": {
+        "max_new_solves": 60
+    },
+    "analytic_check_model": {
+        "u_ref_m": [
+            -1.8940482566888715e-06
+        ],
+        "e_ref_Pa": 206900000000.0
+    },
+    "output": {
+        "dir": "output/surrogate",
+        "training_csv": "output/surrogate/training_responses.csv",
+        "validation_csv": "output/surrogate/validation_responses.csv",
+        "model_file": "output/surrogate/response_surrogate.joblib",
+        "report_file": "output/surrogate/validation_report.json"
+    }
+}
