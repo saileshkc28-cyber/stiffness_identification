@@ -14,7 +14,10 @@
             "target_sub_model_part": "Structure.Beam_Auto1",
             "prior": {
                 "type": "uniform",
-                "parameters": [0.2, 2.0]
+                "parameters": [
+                    0.2,
+                    2.0
+                ]
             }
         }
     ],
