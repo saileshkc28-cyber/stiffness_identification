@@ -1,0 +1,8 @@
+{
+    "noise_percent": 2.0,
+    "population": {
+        "n_samples": 1000,
+        "alpha_std": 0.1,
+        "seed": 20260802
+    }
+}

@@ -1,0 +1,67 @@
+{
+    "list_of_sensors": [
+        {
+            "type": "displacement_sensor",
+            "name": "disp_y_1",
+            "location": [0.1111111111, 0.05, 0.0],
+            "direction": [0.0, 1.0, 0.0],
+            "weight": 1.0
+        },
+        {
+            "type": "displacement_sensor",
+            "name": "disp_y_2",
+            "location": [0.2222222222, 0.05, 0.0],
+            "direction": [0.0, 1.0, 0.0],
+            "weight": 1.0
+        },
+        {
+            "type": "displacement_sensor",
+            "name": "disp_y_3",
+            "location": [0.3333333333, 0.05, 0.0],
+            "direction": [0.0, 1.0, 0.0],
+            "weight": 1.0
+        },
+        {
+            "type": "displacement_sensor",
+            "name": "disp_y_4",
+            "location": [0.4444444444, 0.05, 0.0],
+            "direction": [0.0, 1.0, 0.0],
+            "weight": 1.0
+        },
+        {
+            "type": "displacement_sensor",
+            "name": "disp_y_5",
+            "location": [0.5555555556, 0.05, 0.0],
+            "direction": [0.0, 1.0, 0.0],
+            "weight": 1.0
+        },
+        {
+            "type": "displacement_sensor",
+            "name": "disp_y_6",
+            "location": [0.6666666667, 0.05, 0.0],
+            "direction": [0.0, 1.0, 0.0],
+            "weight": 1.0
+        },
+        {
+            "type": "displacement_sensor",
+            "name": "disp_y_7",
+            "location": [0.7777777778, 0.05, 0.0],
+            "direction": [0.0, 1.0, 0.0],
+            "weight": 1.0
+        },
+        {
+            "type": "displacement_sensor",
+            "name": "disp_y_8",
+            "location": [0.8888888889, 0.05, 0.0],
+            "direction": [0.0, 1.0, 0.0],
+            "weight": 1.0
+        },
+        {
+            "type": "displacement_sensor",
+            "name": "disp_y_9",
+            "location": [1.0, 0.05, 0.0],
+            "direction": [0.0, 1.0, 0.0],
+            "weight": 1.0
+        }
+    ]
+}
