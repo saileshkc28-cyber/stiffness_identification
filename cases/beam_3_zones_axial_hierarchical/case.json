@@ -17,5 +17,21 @@
         "gp_jitter": 1e-10,
         "n_restarts": 8,
         "seed": 20260911
+    },
+    "hierarchical": {
+        "observations_file": "../damaged_system/population_samples.csv",
+        "nodes_per_zone": 7,
+        "widen": 1.0,
+        "sd_prior": [0.01, 0.3],
+        "sampler": {
+            "python_module": "smc_acs_robust_sampler",
+            "Parameters": {
+                "n_particles": 1000,
+                "p": 1,
+                "burn": 2,
+                "target_cov": 1.5,
+                "random_seed": 20260802
+            }
+        }
     }
 }
