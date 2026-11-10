@@ -1,6 +1,6 @@
 """Run one stage of a case.
 
-Usage: python run_case.py <case> <check|phase1|population|infer|hermite>
+Usage: python run_case.py <case> <check|phase1|population|infer|hermite|surrogate>
 """
 import json
 import os
@@ -14,6 +14,7 @@ STAGES = {
     "population": ("bayesian_inference", "population_phase1.py"),
     "infer": ("bayesian_inference", "MainBayesian.py"),
     "hermite": ("bayesian_inference", "gauss_hermite.py"),
+    "surrogate": ("bayesian_inference", "build_surrogate.py"),
 }
 
 
@@ -39,7 +40,7 @@ def main():
 
     sigma_file = os.path.join(case_dir, "noise_sigma.json")
     data_file = os.path.join(case_dir, "damaged_system", "measured_data.csv")
-    if stage in ("phase1", "population", "infer", "hermite") and not os.path.exists(sigma_file):
+    if stage in ("phase1", "population", "infer", "hermite", "surrogate") and not os.path.exists(sigma_file):
         sys.exit(f"run 'python run_case.py {case} check' first: no noise_sigma.json")
     if stage == "infer":
         if not os.path.exists(data_file):
